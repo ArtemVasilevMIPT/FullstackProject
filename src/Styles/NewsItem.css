@@ -1,0 +1,26 @@
+.news-item {
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(114, 114, 114, 0.46);
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 80%;
+}
+
+.news-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-left: 40px;
+}
+
+.news-description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.75);
+    overflow: scroll;
+}

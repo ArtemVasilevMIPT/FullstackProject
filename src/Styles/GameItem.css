@@ -1,0 +1,60 @@
+.game-item {
+    background: rgba(66, 66, 66, 0.76);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.game-pic {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    display: inline-block;
+    flex: 1;
+}
+
+.game-title {
+    color: rgba(3, 218, 196, 1);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: rgba(255, 253, 253, 0.69);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: scroll;
+}
+
+.play-button {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    display: inline-block;
+}
+
+.triangle {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+}

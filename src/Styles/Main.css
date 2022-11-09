@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.recent {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,47 @@
+.main-header {
+    background: rgba(66, 66, 66, 0.45);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.logo-img {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.header-button {
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 30px;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.site-name {
+    margin-right: auto;
+    font-size: 34px;
+    padding: 20px;
+}

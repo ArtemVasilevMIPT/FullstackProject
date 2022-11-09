@@ -9,7 +9,7 @@ export function Header() {
         <header className="main-header">
             <img src={logo} className="logo-img"/>
             <span className="site-name">Awesome Tabletop</span>
-            <HeaderLink to=''>Home</HeaderLink>
+            <HeaderLink to='/home'>Home</HeaderLink>
             <HeaderLink to='/games/list'>Games</HeaderLink>
             <HeaderLink to='/community'>Community</HeaderLink>
             <a href="">

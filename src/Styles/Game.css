@@ -1,0 +1,93 @@
+.game-container {
+    margin-top: 140px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    row-gap: 1em;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.game-name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 20px;
+}
+
+.pfp {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+
+.span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 20px;
+}
+
+.description-wrapper {
+    background: rgba(66, 66, 66, 0.76);
+    border-radius: 20px;
+    max-width: 60%;
+    min-height: 40%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.section-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-decoration-line: underline;
+}
+
+.gm-container {
+    background: rgba(66, 66, 66, 0.76);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.player-container {
+    background: rgba(66, 66, 66, 0.76);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.launch-button {
+    background: #BB86FC;
+    opacity: 0.8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    max-width: 80%;
+    max-height: 60%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.game-image {
+    width: auto;
+    height: auto;
+    max-width: 200;
+    max-height: 200px;
+    margin-left: 20px;
+}

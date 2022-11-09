@@ -45,3 +45,14 @@
     font-size: 34px;
     padding: 20px;
 }
+
+.header-button-selected {
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 30px;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration-line: underline;
+}

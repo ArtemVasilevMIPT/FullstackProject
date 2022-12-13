@@ -1,9 +1,12 @@
 import '../Styles/Game.css'
+import { Header } from './Header';
 
 const default_pfp = require('../Images/default_pfp.jpg');
 const game_icon = require('../Images/d12.jpg');
 export function Game() {
     return (
+        <>
+        <Header/>
         <div className='game-container'>
             <h1 className='game-name'>Game name</h1>
             <button className='launch-button'>Launch game</button>
@@ -37,5 +40,6 @@ export function Game() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

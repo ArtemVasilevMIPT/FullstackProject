@@ -1,145 +1,77 @@
 .Container {
-    position: absolute;
-    width: 400px;
-    height: 500px;
-    left: calc(50% - 400px/2);
-    top: calc(50% - 500px/2 + 11px);
-
-    background: #9D9D9D;
-    opacity: 0.17;
+    display: flex;
+    flex-direction: column;
+    background: rgba(157, 157, 157, 0.17);
     border-radius: 10px;
+
+    max-width: 25%;
+    min-height: 50%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.LoginFrom {
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-input {
-    border: 0;
-    color: #FFFFFF;
-    font-size: 24px;
-}
-
-#password {
-    position: absolute;
-    width: 350px;
-    height: 60px;
-    left: 545px;
-    top: 463px;
-
-    background: linear-gradient(0deg, #7E7777, #7E7777), #7E7777;
-    opacity: 0.8;
-    border-radius: 20px;
-}
-
-#email {
-    position: absolute;
-    width: 350px;
-    height: 60px;
-    left: 545px;
-    top: 330px;
-
-    background: linear-gradient(0deg, #7E7777, #7E7777), #7E7777;
-    opacity: 0.8;
-    border-radius: 20px;
-}
-
-label {
-    text-align: left;
+.FormLabel,
+.FormInput,
+.FormButton {
+    margin: 10px;
     display: block;
 }
 
-#password-label {
-    position: absolute;
-    width: 176px;
-    height: 32px;
-    left: 553px;
-    top: 431px;
+.LoginFrom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.FormLabel {
+    text-align: left;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-
     color: #FFFFFF;
 }
 
-#email-label {
-    position: absolute;
-    width: 218px;
-    height: 31px;
-    left: 557px;
-    top: 299px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
+.FormInput {
+    border: 0;
+    color: #FFFFFF;
     font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
+    background: rgba(126, 119, 119, 1);
+    border-radius: 20px;
+    min-height: 50px;
 }
 
-p {
+.FormText {
     text-align: center;
-}
-
-#or {
-
-    position: absolute;
-    width: 156px;
-    height: 19px;
-    left: 705px;
-    top: 640px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     text-align: center;
 
     color: #FFFFFF;
 }
 
 #create {
-    position: absolute;
-    width: 260px;
-    height: 23px;
-    left: 610px;
-    top: 680px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     text-align: center;
 
     color: #BB86FC;
 }
 
-button {
-    position: absolute;
-    width: 203px;
-    height: 64px;
-    left: 618px;
-    top: 564px;
+.FormButton {
 
-    background: #BB86FC;
-    opacity: 0.8;
+    background: rgba(187, 134, 252, 1);
     border-radius: 10px;
+
+    border: 0;
+    text-align: center;
 
     font-family: 'Inter';
     font-style: normal;
@@ -148,4 +80,6 @@ button {
     line-height: 29px;
 
     cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
 }

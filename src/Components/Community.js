@@ -1,8 +1,11 @@
 import { NewsItem } from "./NewsItem";
 import '../Styles/Community.css'
+import { Header } from "./Header";
 
 export function Community() {
     return (
+        <>
+        <Header/>
         <div className="community-wrapper">
             <div className="news-list">
                 <NewsItem/>
@@ -17,5 +20,6 @@ export function Community() {
                 <button className="news-button">FAQ</button>
             </div>
         </div>
+        </>
     );
 }

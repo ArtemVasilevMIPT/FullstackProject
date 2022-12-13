@@ -5,12 +5,15 @@ import { Main } from './Components/Main';
 import { Games } from './Components/Games';
 import { Community } from './Components/Community';
 import {Game} from './Components/Game';
+import {LoginPage} from './Components/LoginPage'
+import {RegisterPage} from './Components/RegisterPage'
 
 function App() {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
+                 <Route path='/login' element={<LoginPage/>}></Route>
+                 <Route path='/sign-up' element={<RegisterPage/>}></Route>
                  <Route path='/home' element={<Main />}></Route>
                  <Route path='/games/list' element={<Games />}></Route>
                  <Route path='/games/:id' element={<Game />}></Route>

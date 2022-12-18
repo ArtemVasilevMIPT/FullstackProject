@@ -70,7 +70,7 @@ class UserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
     serializer_class = UserSerializer
 
     def get(self, request, *args, **kwargs):
-        serializer = self.serializer_class(request.user)
+        serializer = self.serializer_class(request.user, context={"request": request})
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def put(self, request, *args, **kwargs):

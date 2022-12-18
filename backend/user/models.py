@@ -35,6 +35,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     nickname = models.CharField(max_length=30, blank=True)
     date_joined = models.DateTimeField(default=timezone.now)
     is_staff = models.BooleanField(default=False)
+    profile_pic = models.ImageField(default='default_pfp.jpg')
 
     objects = UserManager()
 

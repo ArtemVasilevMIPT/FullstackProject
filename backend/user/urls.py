@@ -1,4 +1,6 @@
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
@@ -13,4 +15,4 @@ urlpatterns = [
     path('api/user/create/', views.CreateUserAPIView.as_view()),
     path('api/user/auth/', views.authenticate_user),
     path('api/user/update/', views.UserRetrieveUpdateAPIView.as_view()),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

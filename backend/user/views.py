@@ -80,3 +80,13 @@ class UserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
         serializer.save()
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class UserByIdAPIView(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = UserSerializer
+
+    def get(self, requset, id):
+        user = User.objects.get(id=id)
+        serializer = self.serializer_class(user, context={"request": requset})
+        return Response(serializer.data, status=status.HTTP_200_OK)

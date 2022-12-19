@@ -15,7 +15,8 @@ export function Header() {
     useEffect(() => {
         async function func() {
         let result = await authRequest.get('/api/user/update/').then((response) => {
-            setUser({username: response.data['nickname'], pfp: response.data['profile_pic']})
+            setUser({username: response.data['nickname'], 
+                     pfp: response.data['profile_pic'], id: response.data['id']})
         }).catch((error) => {
             navigate("/login");
         })
@@ -31,7 +32,7 @@ export function Header() {
             <HeaderLink to='/games/list'>Games</HeaderLink>
             <HeaderLink to='/community'>Community</HeaderLink>
             <a href="">
-                <img src={user.pfp} className="profile-pic"/>
+                {!user ? <img src={def_pfp} className="profile-pic"/> : <img src={user.pfp} className="profile-pic"/>}
             </a>
         </header>
     );

@@ -8,6 +8,7 @@ class Game(models.Model):
     name = models.CharField(max_length=40)
     description = models.TextField(max_length=256)
     state = models.JSONField()
+    #players = models.JSONField()
     players = ArrayField(models.BigIntegerField(), blank=True)
-    image = models.ImageField(default="default_game_pic.png")
+    image = models.ImageField(default="default_game_pic.jpg")
     gm = models.BigIntegerField()

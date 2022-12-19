@@ -23,7 +23,7 @@ class GetGameByUserAPIView(APIView):
     def get(self, request):
         user_id = int(request.GET.get('user'))
         all = request.GET.get('all')
-        result = Game.objects.filter(Q(gm=user_id) | Q(players__contains=[user_id]))
+        result = Game.objects.filter(Q(gm=user_id) | Q(players__contains=[{'players': user_id}]))
         if all == 'false':
             result = result[:3]
 
@@ -33,12 +33,3 @@ class GetGameByUserAPIView(APIView):
             result_dict['game_list'].append(serializer.data)
 
         return Response(result_dict, status=status.HTTP_200_OK)
-
-
-class GetGameByIdAPIView(APIView):
-    serializer_class = GameSerializer
-
-    def get(self, request, id):
-        game = Game.objects.get(id=id)
-        serializer = self.serializer_class(game, context={"request": request})
-        return Response(serializer.data, status=status.HTTP_200_OK)
